@@ -16,7 +16,7 @@ class ZCRMConfigUtil
 	    $mandatory_keys = array(ZohoOAuthConstants::CLIENT_ID,ZohoOAuthConstants::CLIENT_SECRET,ZohoOAuthConstants::REDIRECT_URL,APIConstants::CURRENT_USER_EMAIL);
 	    if($configuration == null)
 	    {
-	        $path=realpath(dirname(__FILE__)."/../../../../../resources/configuration.properties");
+	        $path=realpath(dirname(__FILE__)."/../../../../../../../../../zoho_configuration.properties");
 	        $fileHandler=fopen($path,"r");
 	        if(!$fileHandler)
 	        {

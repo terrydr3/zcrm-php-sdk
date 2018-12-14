@@ -6,9 +6,8 @@ class CommonUtil
 	{
 		$reponseMap=array();
 		try{
-			while(!feof($fileHandler))
+			while(($line = fgets($handle)) !== false)
 			{
-				$line=fgets($fileHandler);
 				$lineAfterSplit=explode("=",$line);
 				if(strpos($lineAfterSplit[0],"#")===false)
 				{
